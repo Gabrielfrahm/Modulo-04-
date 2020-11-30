@@ -1,5 +1,8 @@
 import { container } from 'tsyringe';
 
+// Registrando a injeção de dependência do hash de senha
+import '@modules/users/providers';
+
 import IAppointmentRepository from '@modules/appointments/repositories/IAppointmentsRepository';
 import AppointmentsRepository from '@modules/appointments/infra/typeorm/repositories/AppointmentsRepository';
 
